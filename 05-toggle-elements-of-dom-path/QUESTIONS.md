@@ -7,3 +7,4 @@
 > Describe the contract you used for finding the movies to toggle in the DOM. How is this function different from other functions that find elements in the DOM?
 
 Your reply here...
+Es izmantoju document.querySelectorAll funkciju. Šī funkcija ir atšķirīga ar to, kad ar to var kādā noteiktā vietā izvēlēties visus elementus.
