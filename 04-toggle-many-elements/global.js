@@ -1,24 +1,17 @@
 // Your JavaScript goes here.
 window.addEventListener("load", function(){
-    const TOGGLE_BUTTON = document.getElementById('button')
-    var toggleMeClass = document.getElementsByClassName('toggle_me')
+    const TOGGLE_BUTTON = document.getElementById('button');
+    var toggleMeClass = document.getElementsByClassName('toggle_me');
 
-    TOGGLE_BUTTON.addEventListener('click', function(e){
+    TOGGLE_BUTTON.addEventListener('click', function(){
 
-        if(toggleMeClass[0].style.display == 'none'){
-            for (i = 0; i < toggleMeClass.length; i++) {
+        for (i = 0; i < toggleMeClass.length; i++) {
+            if(toggleMeClass[i].style.display == 'none'){
                 toggleMeClass[i].style.display = "inline";
             }
-        }
-        else{
-            for (i = 0; i < toggleMeClass.length; i++) {
+            else{
                 toggleMeClass[i].style.display = "none";
-                
             }
         }
-            
-        
-        
-    });
-    
+    });  
 })

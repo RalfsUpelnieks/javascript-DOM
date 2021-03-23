@@ -1,26 +1,10 @@
 window.addEventListener("load", function(){
 
-  // Here is some pseudo-code to help you get started:
+  const MORE_BUTTON = document.getElementById('more_text_link');
 
-  // 1. Get the DOM element which will be clicked.
-
-  const MORE = document.getElementById('more_text_link')
-
-  // 2. Add a listener for the 'click' event onto that element.
-    MORE.addEventListener('click', function(e){
-  // 3. The block for the listener should get the DOM
-  //    element containing the text to reveal.
-
-  // 4. Modify that DOM element's style to change it's 'display'
-  //    from a hidden value to a shown value.
-
-      document.getElementById('more_text_content').style = "inline"
-
-    // 5. Also modify the DOM to hide the "More info..." link.
-      MORE.style.display = "none"
-    })
-  
-
-  
+  MORE_BUTTON.addEventListener('click', function(){
+    document.getElementById('more_text_content').style = "inline";
+    MORE_BUTTON.style.display = "none";
+  });
   
 }); 
