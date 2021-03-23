@@ -1,18 +1,18 @@
 // Your JavaScript goes here.
 window.addEventListener("load", function(){
 
-    const input1 = document.getElementById('first')
-    const input2 = document.getElementById('second')
-    const input3 = document.getElementById('third')
+    const INPUT_1 = document.getElementById('first')
+    const INPUT_2 = document.getElementById('second')
+    const INPUT_3 = document.getElementById('third')
 
-    input1.addEventListener('input', function(e){
-        if(input1.value.length == input1.maxLength){
-            input2.focus()
+    INPUT_1.addEventListener('input', function(e){
+        if(INPUT_1.value.length == INPUT_1.maxLength){
+            INPUT_2.focus()
         }
     });
-    input2.addEventListener('input', function(e){
-        if(input2.value.length == input2.maxLength){
-            input3.focus()
+    INPUT_2.addEventListener('input', function(e){
+        if(INPUT_2.value.length == INPUT_2.maxLength){
+            INPUT_3.focus()
         }
     });
     

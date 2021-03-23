@@ -1,10 +1,10 @@
 window.addEventListener("load", function(){
-    const hideButton = document.getElementById('button')
+    const HIDE_BUTTON = document.getElementById('button')
 
-    hideButton.addEventListener('click', function(e){
-        var hideMeCass = document.getElementsByClassName('hide_me')
-        for (i = 0; i < hideMeCass.length; i++) {
-            hideMeCass[i].style.display = "none";
+    HIDE_BUTTON.addEventListener('click', function(e){
+        var hideMeClass = document.getElementsByClassName('hide_me')
+        for (i = 0; i < hideMeClass.length; i++) {
+            hideMeClass[i].style.display = "none";
             
         }
         

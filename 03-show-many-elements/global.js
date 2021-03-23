@@ -1,10 +1,10 @@
 window.addEventListener("load", function(){
-    const showButton = document.getElementById('button')
+    const SHOW_BUTTON = document.getElementById('button')
 
-    showButton.addEventListener('click', function(e){
-        var showMeCass = document.getElementsByClassName('show_me')
-        for (i = 0; i < showMeCass.length; i++) {
-            showMeCass[i].style.display = "inline";
+    SHOW_BUTTON.addEventListener('click', function(e){
+        var showMeClass = document.getElementsByClassName('show_me')
+        for (i = 0; i < showMeClass.length; i++) {
+            showMeClass[i].style.display = "inline";
             
         }
         
